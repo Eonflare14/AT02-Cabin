@@ -1260,20 +1260,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 1bbcd022f155a4944808bc105cc5d095, type: 3}
---- !u!64 &4128126939876353532
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4155379593798885702}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: c4de274e95ea349928ad1e2d88f630d2, type: 3}
 --- !u!65 &4129729467422964904
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4079,7 +4065,7 @@ GameObject:
   - component: {fileID: 4154403276399090586}
   - component: {fileID: 4169329875067959862}
   - component: {fileID: 4177339737993157402}
-  - component: {fileID: 4128126939876353532}
+  - component: {fileID: 4177339737993157403}
   m_Layer: 0
   m_Name: PFB_Fridge
   m_TagString: Untagged
@@ -8352,6 +8338,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4177339737993157403
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4155379593798885702}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.82076263, y: 1.9355822, z: 0.9519262}
+  m_Center: {x: 0.015135352, y: 0.9678736, z: 0}
 --- !u!23 &4177339738038885910
 MeshRenderer:
   m_ObjectHideFlags: 0

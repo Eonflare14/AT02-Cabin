@@ -145,6 +145,12 @@ public class CameraHandler : MonoBehaviour
     }
     private void handleObjectDialogue(Collider obj)
     {
+        if(obj == null)
+        {
+            Debug.LogWarning("Null Object");
+            return;
+        }
+
         string textName = "";
         string textDescription = "";
 

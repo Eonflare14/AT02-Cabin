@@ -465,7 +465,7 @@ MonoBehaviour:
   sensitivity: 15
   drag: 0.5
   verticalClamp: {x: -45, y: 70}
-  CrosshairObj: {fileID: 0}
+  CrosshairObj: {fileID: 1760178023}
   CrosshairSprites:
   - {fileID: 2005057353, guid: ef3b0c4032b506247879b6a2d66c5f23, type: 3}
   - {fileID: 1473929595, guid: ef3b0c4032b506247879b6a2d66c5f23, type: 3}
@@ -816,7 +816,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -12655433, guid: ef3b0c4032b506247879b6a2d66c5f23, type: 3}
+  m_Sprite: {fileID: 191047664, guid: ef3b0c4032b506247879b6a2d66c5f23, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

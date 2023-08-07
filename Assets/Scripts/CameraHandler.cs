@@ -28,7 +28,7 @@ public class CameraHandler : MonoBehaviour
     private Transform character;
     private bool mouseLookEnabled = false;
 
-    private int rayLengthMetres = 10;
+    private int rayLengthMetres = 100;
     private Ray ray;
     private RaycastHit rayHit;
 
@@ -48,11 +48,6 @@ public class CameraHandler : MonoBehaviour
         {
             Debug.LogWarning($"{name} should be the child of an empty object!");
         }
-
-        /*if(transform.localPosition != Vector3.zero) 
-        {
-            Debug.LogWarning($"{name} should have a local space of (0,0,0)!");
-        }*/
     }
 
     // Start is called before the first frame update
@@ -80,6 +75,25 @@ public class CameraHandler : MonoBehaviour
             transform.localRotation = Quaternion.AngleAxis(-result.y, Vector3.right);
             character.localRotation = Quaternion.AngleAxis(result.x, character.up);
         }
+
+        //Interactions
+
+        ray = new Ray(transform.position, transform.forward);
+
+        Debug.DrawRay(ray.origin, ray.direction * rayLengthMetres, Color.green);
+        if (Physics.Raycast(ray, out rayHit, rayLengthMetres))
+        {
+            Debug.Log("Ray Hit!");
+
+            if (rayHit.collider.CompareTag("Interact"))
+            {
+                CrosshairImage.sprite = CrosshairSprites[0];
+            }
+            else
+            {
+                CrosshairImage.sprite = CrosshairSprites[1];
+            }
+        }
     }
 
     /// <summary>
@@ -106,28 +120,8 @@ public class CameraHandler : MonoBehaviour
         }
         //Interaction
 
-        ray = new Ray(transform.position, transform.forward);
-
-        Debug.DrawRay(ray.origin, ray.direction * rayLengthMetres, Color.green);
-        if (Physics.Raycast(ray, out rayHit, rayLengthMetres) )
-        {
-            Debug.Log("Ray Hit!");
-
-            if (rayHit.collider.CompareTag("Interact"))
-            {
-                setCrosshairType(0);
-            }
-        }
-        else
-        {
-            setCrosshairType(1);
-        }
-
+        //ray = new Ray(transform.position, transform.forward);
         
-    }
-
-    void setCrosshairType (int type)
-    {
-        CrosshairImage.sprite = CrosshairSprites[type];
+        
     }
 }

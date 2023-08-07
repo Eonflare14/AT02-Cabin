@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,12 +17,15 @@ public class CameraHandler : MonoBehaviour
     [Tooltip("The minimum and maximum angle that the camera can move on the y axis.")]
     [SerializeField] private Vector2 verticalClamp = new Vector2(-45, 70);
 
-    [Tooltip("Crossharir object")]
+    [Tooltip("Dialogue Text Object")]
+    [SerializeField] private GameObject DialogueTextObj;
+    [Tooltip("Crosshair object")]
     [SerializeField] private GameObject CrosshairObj;
 
     [SerializeField] private Sprite[] CrosshairSprites;
 
     private Image CrosshairImage;
+    private TextMeshProUGUI DialogueText;
     
     private Vector2 smoothing;
     private Vector2 result;
@@ -56,6 +60,9 @@ public class CameraHandler : MonoBehaviour
         ToggleMouseLook(true, true);
 
         CrosshairImage = CrosshairObj.GetComponent<Image>();
+        DialogueText = DialogueTextObj.GetComponent<TextMeshProUGUI>();
+
+        clearObjectDialogue();
     }
 
     // Update is called once per frame
@@ -78,6 +85,8 @@ public class CameraHandler : MonoBehaviour
 
         //Interactions
 
+        CrosshairImage.sprite = CrosshairSprites[1];
+
         ray = new Ray(transform.position, transform.forward);
 
         Debug.DrawRay(ray.origin, ray.direction * rayLengthMetres, Color.green);
@@ -88,11 +97,16 @@ public class CameraHandler : MonoBehaviour
             if (rayHit.collider.CompareTag("Interact"))
             {
                 CrosshairImage.sprite = CrosshairSprites[0];
+                handleObjectDialogue(rayHit.collider);
             }
             else
             {
-                CrosshairImage.sprite = CrosshairSprites[1];
+                clearObjectDialogue();
             }
+        }
+        else
+        {
+            clearObjectDialogue();
         }
     }
 
@@ -123,5 +137,38 @@ public class CameraHandler : MonoBehaviour
         //ray = new Ray(transform.position, transform.forward);
         
         
+    }
+
+    private void clearObjectDialogue()
+    {
+        DialogueText.text = "";
+    }
+    private void handleObjectDialogue(Collider obj)
+    {
+        string textName = "";
+        string textDescription = "";
+
+        switch (obj.name)
+        {
+            case "PFB_Bed":
+                textName = "Bed";
+                textDescription = "bed";
+                break;
+            case "PFB_Toilet":
+                textName = "Toilet";
+                textDescription = "toilet";
+                break;
+            case "KitchenBench_base":
+                textName = "Kithcen Bench";
+                textDescription = "bench";
+                break;
+            default:
+                textName = obj.name;
+                textDescription = "Unknown Object";
+                break;
+        }
+
+
+        DialogueText.text = string.Format("<b><u>{0}</u></b>\n{1}", textName, textDescription);
     }
 }

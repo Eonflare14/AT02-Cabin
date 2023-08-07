@@ -36,10 +36,10 @@ public class MouseLook : MonoBehaviour
             Debug.LogWarning($"{name} should be the child of an empty object!");
         }
 
-        if(transform.localPosition != Vector3.zero) 
+        /*if(transform.localPosition != Vector3.zero) 
         {
             Debug.LogWarning($"{name} should have a local space of (0,0,0)!");
-        }
+        }*/
     }
 
     // Start is called before the first frame update

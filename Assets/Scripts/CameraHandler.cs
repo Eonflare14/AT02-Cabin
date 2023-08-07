@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 /// <summary>
 /// This class should be attached to the main camera.
 /// </summary>
-public class MouseLook : MonoBehaviour
+public class CameraHandler : MonoBehaviour
 {
     [Tooltip("The amount of influence mouse input has on camera movement. Must have a value above 0.")]
     [SerializeField] private float sensitivity;
@@ -13,11 +15,22 @@ public class MouseLook : MonoBehaviour
     [SerializeField] private float drag;
     [Tooltip("The minimum and maximum angle that the camera can move on the y axis.")]
     [SerializeField] private Vector2 verticalClamp = new Vector2(-45, 70);
+
+    [Tooltip("Crossharir object")]
+    [SerializeField] private GameObject CrosshairObj;
+
+    [SerializeField] private Sprite[] CrosshairSprites;
+
+    private Image CrosshairImage;
     
     private Vector2 smoothing;
     private Vector2 result;
     private Transform character;
     private bool mouseLookEnabled = false;
+
+    private int rayLengthMetres = 10;
+    private Ray ray;
+    private RaycastHit rayHit;
 
     /// <summary>
     /// Use to turn mouse look on and off. To toggle cursor, use ToggleMouseLook method.
@@ -46,11 +59,14 @@ public class MouseLook : MonoBehaviour
     private void Start()
     {
         ToggleMouseLook(true, true);
+
+        CrosshairImage = CrosshairObj.GetComponent<Image>();
     }
 
     // Update is called once per frame
     private void Update()
     {
+        //Mouse Look
         if (mouseLookEnabled == true)
         {
             var md = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
@@ -74,6 +90,7 @@ public class MouseLook : MonoBehaviour
     /// <param name="toggleCursor"></param>
     public void ToggleMouseLook(bool mouseLookActive, bool toggleCursor = false)
     {
+        //Mouse Look
         mouseLookEnabled = mouseLookActive;
         if (toggleCursor == true)
         {
@@ -87,5 +104,30 @@ public class MouseLook : MonoBehaviour
             }
             Cursor.visible = !mouseLookActive;
         }
+        //Interaction
+
+        ray = new Ray(transform.position, transform.forward);
+
+        Debug.DrawRay(ray.origin, ray.direction * rayLengthMetres, Color.green);
+        if (Physics.Raycast(ray, out rayHit, rayLengthMetres) )
+        {
+            Debug.Log("Ray Hit!");
+
+            if (rayHit.collider.CompareTag("Interact"))
+            {
+                setCrosshairType(0);
+            }
+        }
+        else
+        {
+            setCrosshairType(1);
+        }
+
+        
+    }
+
+    void setCrosshairType (int type)
+    {
+        CrosshairImage.sprite = CrosshairSprites[type];
     }
 }

@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2021.3/release' branch; Version is '2021.3.17f1 (3e8111cac19d) revision 4096273'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19044) 64bit Education' Language: 'en' Physical Memory: 16302 MB
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 32716 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2021.3.17f1\Editor\Unity.exe
+D:\Apps\UnityHub\Editors\2021.3.17f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/30018650/AT02 Cabin
+D:/Documents/Unity Projects/AT02-Cabin
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-1893
-Successfully changed project path to: C:/Users/30018650/AT02 Cabin
-C:/Users/30018650/AT02 Cabin
+51768
+Successfully changed project path to: D:/Documents/Unity Projects/AT02-Cabin
+D:/Documents/Unity Projects/AT02-Cabin
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,109 +47,109 @@ C:/Users/30018650/AT02 Cabin
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [19664] Host "[IP] 192.168.23.138 [Port] 0 [Flags] 2 [Guid] 1482871043 [EditorId] 1482871043 [Version] 1048832 [Id] WindowsEditor(7,PC-605370) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [24164] Host "[IP] 192.168.0.220 [Port] 0 [Flags] 2 [Guid] 4010944049 [EditorId] 4010944049 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-O6DL2CD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [19664] Host "[IP] 192.168.23.138 [Port] 0 [Flags] 2 [Guid] 1482871043 [EditorId] 1482871043 [Version] 1048832 [Id] WindowsEditor(7,PC-605370) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [24164] Host "[IP] 192.168.0.220 [Port] 0 [Flags] 2 [Guid] 4010944049 [EditorId] 4010944049 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-O6DL2CD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 88.44 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 101.05 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.17f1 (3e8111cac19d)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.17f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/30018650/AT02 Cabin/Assets
+[Subsystems] Discovering subsystems at path D:/Apps/UnityHub/Editors/2021.3.17f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Documents/Unity Projects/AT02-Cabin/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Radeon RX 570 Series (ID=0x67df)
-    Vendor:   ATI
-    VRAM:     4074 MB
-    Driver:   31.0.12027.9001
+    Renderer: NVIDIA GeForce RTX 3070 (ID=0x2484)
+    Vendor:   NVIDIA
+    VRAM:     8031 MB
+    Driver:   31.0.15.3640
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.17f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.17f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56420
+Mono path[0] = 'D:/Apps/UnityHub/Editors/2021.3.17f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Apps/UnityHub/Editors/2021.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Apps/UnityHub/Editors/2021.3.17f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56148
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.007465 seconds.
+Register platform support module: D:/Apps/UnityHub/Editors/2021.3.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.038744 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 86.61 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 97.45 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.650 seconds
+- Completed reload, in  1.026 seconds
 Domain Reload Profiling:
-	ReloadAssembly (651ms)
-		BeginReloadAssembly (77ms)
+	ReloadAssembly (1027ms)
+		BeginReloadAssembly (210ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (458ms)
-			LoadAssemblies (74ms)
+		EndReloadAssembly (592ms)
+			LoadAssemblies (200ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (114ms)
+			SetupTypeCache (137ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (263ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (328ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
+				InitializePlatformSupportModulesInManaged (19ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (87ms)
+				RefreshPlugins (98ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (121ms)
-				ProcessInitializeOnLoadMethodAttributes (45ms)
+				ProcessInitializeOnLoadAttributes (153ms)
+				ProcessInitializeOnLoadMethodAttributes (57ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006842 seconds.
+Registered in 0.022689 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\30018650\AT02 Cabin\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\30018650\AT02 Cabin\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image D:\Documents\Unity Projects\AT02-Cabin\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Documents\Unity Projects\AT02-Cabin\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.090 seconds
+- Completed reload, in  1.619 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1091ms)
-		BeginReloadAssembly (113ms)
+	ReloadAssembly (1620ms)
+		BeginReloadAssembly (227ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (10ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (19ms)
-		EndReloadAssembly (858ms)
-			LoadAssemblies (87ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (1188ms)
+			LoadAssemblies (215ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (271ms)
+			SetupTypeCache (348ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (50ms)
-			SetupLoadedEditorAssemblies (400ms)
+			RebuildScriptCaches (69ms)
+			SetupLoadedEditorAssemblies (548ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (97ms)
-				ProcessInitializeOnLoadAttributes (251ms)
-				ProcessInitializeOnLoadMethodAttributes (29ms)
-				AfterProcessingInitializeOnLoad (15ms)
-				EditorAssembliesLoaded (1ms)
+				BeforeProcessingInitializeOnLoad (165ms)
+				ProcessInitializeOnLoadAttributes (291ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
+				AfterProcessingInitializeOnLoad (43ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.89 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3377 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (113.4 KB). Loaded Objects now: 3834.
-Memory consumption went from 115.6 MB to 115.4 MB.
-Total: 3.180600 ms (FindLiveObjects: 0.253100 ms CreateObjectMapping: 0.192200 ms MarkObjects: 2.631600 ms  DeleteObjects: 0.102800 ms)
+Unloading 25 unused Assets / (56.1 KB). Loaded Objects now: 3836.
+Memory consumption went from 115.4 MB to 115.4 MB.
+Total: 4.380400 ms (FindLiveObjects: 0.355300 ms CreateObjectMapping: 0.164500 ms MarkObjects: 3.753000 ms  DeleteObjects: 0.106100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -163,19 +163,223 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 616902.711118 seconds.
+  Time since last request: 480329.443144 seconds.
   path: Assets/Scenes
   artifactKey: Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8193726cff86800c54781cdc6d54904') in 0.013465 seconds 
+Start importing Assets/Scenes using Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc172811d573b296104adb4d2728db37') in 0.011522 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000019 seconds.
+  Time since last request: 0.000039 seconds.
   path: Assets/Scenes/GameScene.unity
   artifactKey: Guid(e88144bab53ad2340afbfed14878346a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/GameScene.unity using Guid(e88144bab53ad2340afbfed14878346a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cc85922617802a287ad514e56252f24') in 0.010027 seconds 
+Start importing Assets/Scenes/GameScene.unity using Guid(e88144bab53ad2340afbfed14878346a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '019ed0dc61de2d470ee25da462b82161') in 0.004559 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 17.101229 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e55ccaa32d8e5c1de03c07a5412c8c3c') in 0.011924 seconds 
+  Time since last request: 74.472754 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/Basket.fbx
+  artifactKey: Guid(b2faaff453e184e16b2caab0bf62ec2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/Basket.fbx using Guid(b2faaff453e184e16b2caab0bf62ec2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c18786ffb5e443c3b6c3c4384ce6750') in 0.912381 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/Fridge.fbx
+  artifactKey: Guid(5de4dc4e4227b4ebbb0d9d8e1fc89801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/Fridge.fbx using Guid(5de4dc4e4227b4ebbb0d9d8e1fc89801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e7f158193fcd8d510f433587a26a2a6') in 0.337515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/LightCover.fbx
+  artifactKey: Guid(2c3e54670f1114c709157026c232cfeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/LightCover.fbx using Guid(2c3e54670f1114c709157026c232cfeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cbb7e00478e63a3531cd8a487a4abdf') in 0.033777 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/Pantry.fbx
+  artifactKey: Guid(4bfa61944d51443af9df337c549d747a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/Pantry.fbx using Guid(4bfa61944d51443af9df337c549d747a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '100de122c735b54e775801762efec1c1') in 0.062894 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/TVStand.fbx
+  artifactKey: Guid(49a6824fe442d4dbbbf83484cbb57db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/TVStand.fbx using Guid(49a6824fe442d4dbbbf83484cbb57db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '507422eb81767d893b5536492721597c') in 0.254473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/DiningTable.fbx
+  artifactKey: Guid(461c3d4bbf4534691892261103fd5525) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/DiningTable.fbx using Guid(461c3d4bbf4534691892261103fd5525) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7de04f449c2d748e36e1b3df90123a9') in 0.034670 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/DoorSingle.fbx
+  artifactKey: Guid(03e880133708442c4b8533df94284924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/DoorSingle.fbx using Guid(03e880133708442c4b8533df94284924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a16a861bc2838a75a85cde61e814936a') in 0.025819 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/BathroomSink.fbx
+  artifactKey: Guid(cdc73258ef2d5ee449fe6d18ccf0122f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/BathroomSink.fbx using Guid(cdc73258ef2d5ee449fe6d18ccf0122f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41e8bdcb1745709b198a2720e0b1cd96') in 0.061579 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/FreestandMirror.fbx
+  artifactKey: Guid(b53e9c84208cc48d8b1adc74360d8db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/FreestandMirror.fbx using Guid(b53e9c84208cc48d8b1adc74360d8db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05ffbb23aced3ba635fbc01581ff3910') in 0.023046 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/Toilet.fbx
+  artifactKey: Guid(361d39cd9e9d9495aac07c02c06df127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/Toilet.fbx using Guid(361d39cd9e9d9495aac07c02c06df127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81cd0c15e7f4960cba7cea2da94f228b') in 0.025976 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/Towel.fbx
+  artifactKey: Guid(c3c06bf3731094f39bb21b24568f8a72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/Towel.fbx using Guid(c3c06bf3731094f39bb21b24568f8a72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b5d8804572c33a403f25af0b7252b0a') in 0.027520 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/Sofa.fbx
+  artifactKey: Guid(0cf5e90e2357e254fb0b8e86b93898a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/Sofa.fbx using Guid(0cf5e90e2357e254fb0b8e86b93898a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54a7942198ce5ce7f6cc473a1156f6a9') in 0.028431 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/CoffeeTable.fbx
+  artifactKey: Guid(87dbd671cf01c4a2092308da3db7c073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/CoffeeTable.fbx using Guid(87dbd671cf01c4a2092308da3db7c073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7060eb06840bd80adcc692f16ca1f17b') in 0.026751 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/Building.fbx
+  artifactKey: Guid(98e60240b18f7429b87de03283152eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/Building.fbx using Guid(98e60240b18f7429b87de03283152eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c0aedbeb998fc77362199b656609ca5') in 0.042133 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/Carpet.fbx
+  artifactKey: Guid(b82ea09c564244770861a67c8c28a0db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/Carpet.fbx using Guid(b82ea09c564244770861a67c8c28a0db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fafb2f3cdfce9226b76233a55d4f20fa') in 0.028257 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/DoorDouble.fbx
+  artifactKey: Guid(0679e7662e39f4c88a029a5a019f1019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/DoorDouble.fbx using Guid(0679e7662e39f4c88a029a5a019f1019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38f325e11170158be701a79ea8a13b04') in 0.035169 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/Lightswitch.fbx
+  artifactKey: Guid(05c7d60c5a0554567951323c7c871432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/Lightswitch.fbx using Guid(05c7d60c5a0554567951323c7c871432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6af790391b1a7a50a5f927965013c471') in 0.033441 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/BedroomSofa.fbx
+  artifactKey: Guid(aa28c890d9e8b5e449d701805e420020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/BedroomSofa.fbx using Guid(aa28c890d9e8b5e449d701805e420020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00f090a986be8a794d80bdf6e8439b3c') in 0.028489 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/Closet.fbx
+  artifactKey: Guid(1a6cb6ae194964e949def57e23f52428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/Closet.fbx using Guid(1a6cb6ae194964e949def57e23f52428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd86007bc2558177f99feb4f2a9e03265') in 0.048916 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/Bed.fbx
+  artifactKey: Guid(78cca8ac5dce04729af9f9377e69636c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/Bed.fbx using Guid(78cca8ac5dce04729af9f9377e69636c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ff5600ff2a13d25e46cbabec14b9670') in 0.051806 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/ChestOfDraws.fbx
+  artifactKey: Guid(e41b6552046814b19a9905c4f669429b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/ChestOfDraws.fbx using Guid(e41b6552046814b19a9905c4f669429b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc0e160d4d17c8f399bed23e4391cb02') in 0.082723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/Fireplace.fbx
+  artifactKey: Guid(91dd9734515124a55a7601f751109097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/Fireplace.fbx using Guid(91dd9734515124a55a7601f751109097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11b5c699b97e287b9db5ece2c0260a3d') in 0.030060 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/DiningChair.fbx
+  artifactKey: Guid(cfcf075e496092c489e38a82a64dd637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/DiningChair.fbx using Guid(cfcf075e496092c489e38a82a64dd637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf7d35ba34dadab5d690c87d144c75ae') in 0.026517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/Curtain.fbx
+  artifactKey: Guid(2b9feae22f933444ea115e64ae65fe7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/Curtain.fbx using Guid(2b9feae22f933444ea115e64ae65fe7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4c80af5f4fa1a87411ae367568403d6') in 0.029381 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/Shower.fbx
+  artifactKey: Guid(6c68c65c918b64edfaa371c21abdf405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/Shower.fbx using Guid(6c68c65c918b64edfaa371c21abdf405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9e363fd966c960eb6bb7db7762ccea0') in 0.051353 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/TV.fbx
+  artifactKey: Guid(fc85b0ed6feee4d46a876935af58e858) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/TV.fbx using Guid(fc85b0ed6feee4d46a876935af58e858) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44b0f2ac9cb4130e2acec883a3d42ad6') in 0.027226 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/Stove.fbx
+  artifactKey: Guid(22ec64bba89e94704b5b0eeee5767c9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/Stove.fbx using Guid(22ec64bba89e94704b5b0eeee5767c9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0140b25d18243285fb43ed8b5b1561d8') in 0.027433 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/BedsideTable.fbx
+  artifactKey: Guid(045a04ff344c14574b5a7bfd7a6e86cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/BedsideTable.fbx using Guid(045a04ff344c14574b5a7bfd7a6e86cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09bbe5bc7ca1cf392df59860ca1f1a4a') in 0.039803 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/OvenExhaustFan.fbx
+  artifactKey: Guid(85bb7b7b18a084921b183acf5a2e3e64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/OvenExhaustFan.fbx using Guid(85bb7b7b18a084921b183acf5a2e3e64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbee5949f6bfe02d2b869f2a6725b66d') in 0.037704 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/CurtainSmall.fbx
+  artifactKey: Guid(43d79aaf9fe2b4ccaa12db9228294f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/CurtainSmall.fbx using Guid(43d79aaf9fe2b4ccaa12db9228294f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a0f052f7b484cbb201bf681772beaa0') in 0.046945 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/BuildingModular.fbx
+  artifactKey: Guid(d4cfb0dac2f1d23438d76065a0e8f08c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/BuildingModular.fbx using Guid(d4cfb0dac2f1d23438d76065a0e8f08c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d5a8a34fa0df529ec0f3b31d5236a4f') in 0.102419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/KitchenBench.fbx
+  artifactKey: Guid(14cf328cd0a9046e5a177954438c6a56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/KitchenBench.fbx using Guid(14cf328cd0a9046e5a177954438c6a56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '417f3e0181d009fc9d23a388f0f167fb') in 0.073216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/Lamp.fbx
+  artifactKey: Guid(6d218f58f8d994088bdbda6c916f467f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/Lamp.fbx using Guid(6d218f58f8d994088bdbda6c916f467f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a4fc384195c7879d7aa8a7a819f5954') in 0.031397 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Third Party Assets/FurnishedCabin/Meshes/SofaSmall.fbx
+  artifactKey: Guid(5ced1428a23f623448aad5b76e93dd8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third Party Assets/FurnishedCabin/Meshes/SofaSmall.fbx using Guid(5ced1428a23f623448aad5b76e93dd8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e7ace0e8c5faf70dbd386564625f7e9') in 0.031753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.382580 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(505f5832c717af34ba0a14ce8322b401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(505f5832c717af34ba0a14ce8322b401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e4a2901c5e7c5cc7476a964765e6387') in 0.004379 seconds 

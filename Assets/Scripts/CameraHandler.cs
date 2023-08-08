@@ -31,6 +31,7 @@ public class CameraHandler : MonoBehaviour
     private Vector2 result;
     private Transform character;
     private bool mouseLookEnabled = false;
+    private bool displayObjectDescription = false;
 
     private int rayLengthMetres = 100;
     private Ray ray;
@@ -90,22 +91,19 @@ public class CameraHandler : MonoBehaviour
         ray = new Ray(transform.position, transform.forward);
 
         Debug.DrawRay(ray.origin, ray.direction * rayLengthMetres, Color.green);
-        if (Physics.Raycast(ray, out rayHit, rayLengthMetres))
+        if (Physics.Raycast(ray, out rayHit, rayLengthMetres) && rayHit.collider.CompareTag("Interact"))
         {
-            Debug.Log("Ray Hit!");
-
-            if (rayHit.collider.CompareTag("Interact"))
+            CrosshairImage.sprite = CrosshairSprites[0];
+            if (Input.GetMouseButtonDown(0))
             {
-                CrosshairImage.sprite = CrosshairSprites[0];
+                Debug.Log("foiwerwegewrg");
+                displayObjectDescription ^= true;//flip bool
                 handleObjectDialogue(rayHit.collider);
-            }
-            else
-            {
-                clearObjectDialogue();
             }
         }
         else
         {
+            displayObjectDescription = false;
             clearObjectDialogue();
         }
     }
@@ -143,6 +141,7 @@ public class CameraHandler : MonoBehaviour
     {
         DialogueText.text = "";
     }
+
     private void handleObjectDialogue(Collider obj)
     {
         if(obj == null)
@@ -154,24 +153,31 @@ public class CameraHandler : MonoBehaviour
         string textName = "";
         string textDescription = "";
 
-        switch (obj.name)
+        if (displayObjectDescription)
         {
-            case "PFB_Bed":
-                textName = "Bed";
-                textDescription = "bed";
-                break;
-            case "PFB_Toilet":
-                textName = "Toilet";
-                textDescription = "toilet";
-                break;
-            case "PFB_KitchenBench":
-                textName = "Kitchen Bench";
-                textDescription = "bench";
-                break;
-            default:
-                textName = obj.name;
-                textDescription = "Unknown Object";
-                break;
+            switch (obj.name)
+            {
+                case "PFB_Bed":
+                    textName = "Bed";
+                    textDescription = "bed";
+                    break;
+                case "PFB_Toilet":
+                    textName = "Toilet";
+                    textDescription = "toilet";
+                    break;
+                case "PFB_KitchenBench":
+                    textName = "Kitchen Bench";
+                    textDescription = "bench";
+                    break;
+                default:
+                    textName = obj.name;
+                    textDescription = "Unknown Object";
+                    break;
+            }
+        }
+        else
+        {
+            clearObjectDialogue();
         }
 
 

@@ -164,8 +164,8 @@ public class CameraHandler : MonoBehaviour
                 textName = "Toilet";
                 textDescription = "toilet";
                 break;
-            case "KitchenBench_base":
-                textName = "Kithcen Bench";
+            case "PFB_KitchenBench":
+                textName = "Kitchen Bench";
                 textDescription = "bench";
                 break;
             default:

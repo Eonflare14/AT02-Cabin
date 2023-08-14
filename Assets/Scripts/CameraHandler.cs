@@ -96,7 +96,6 @@ public class CameraHandler : MonoBehaviour
             CrosshairImage.sprite = CrosshairSprites[0];
             if (Input.GetMouseButtonDown(0))
             {
-                Debug.Log("foiwerwegewrg");
                 displayObjectDescription ^= true;//flip bool
                 handleObjectDialogue(rayHit.collider);
             }
@@ -130,11 +129,6 @@ public class CameraHandler : MonoBehaviour
             }
             Cursor.visible = !mouseLookActive;
         }
-        //Interaction
-
-        //ray = new Ray(transform.position, transform.forward);
-        
-        
     }
 
     private void clearObjectDialogue()
@@ -159,15 +153,15 @@ public class CameraHandler : MonoBehaviour
             {
                 case "PFB_Bed":
                     textName = "Bed";
-                    textDescription = "bed";
+                    textDescription = "This is a bed.";
                     break;
                 case "PFB_Toilet":
                     textName = "Toilet";
-                    textDescription = "toilet";
+                    textDescription = "This is a toilet.";
                     break;
                 case "PFB_KitchenBench":
                     textName = "Kitchen Bench";
-                    textDescription = "bench";
+                    textDescription = "This is a bench.";
                     break;
                 default:
                     textName = obj.name;

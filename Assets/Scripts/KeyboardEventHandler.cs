@@ -18,13 +18,12 @@ public class KeyboardEventHandler : MonoBehaviour
 
     void QuitGame (string reason, string additionalMessage = "")
     {
-        try
-        {
-            Debug.Log(string.Format("Exiting application at time {0}. Reason: {1}. {2}", Time.realtimeSinceStartup, reason, additionalMessage));
-        }
-        finally
-        {
-            Application.Quit();
-        }
+        Debug.Log( string.Format(
+            "Exiting application at time {0} seconds. Reason: {1}. {2}",
+            Time.realtimeSinceStartup,
+            reason,
+            additionalMessage
+        ));
+        Application.Quit();
     }
 }

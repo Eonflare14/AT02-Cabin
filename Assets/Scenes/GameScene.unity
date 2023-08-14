@@ -4590,7 +4590,7 @@ GameObject:
   - component: {fileID: 4154403277285217824}
   - component: {fileID: 4169329872695223304}
   - component: {fileID: 4177339735761812595}
-  - component: {fileID: 4177339735761812597}
+  - component: {fileID: 4177339735761812596}
   m_Layer: 0
   m_Name: PFB_DiningChair (3)
   m_TagString: Untagged
@@ -6662,8 +6662,8 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.4750682, y: 1.2209088, z: 0.56097955}
   m_Center: {x: 0.000015258789, y: 0.6128685, z: 0.00012207031}
---- !u!137 &4177339735761812597
-SkinnedMeshRenderer:
+--- !u!23 &4177339735761812596
+MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -6677,9 +6677,9 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 3
+  m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: d6a229c0f47dadf42b20d706185b565a, type: 2}
@@ -6694,7 +6694,7 @@ SkinnedMeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -6703,18 +6703,7 @@ SkinnedMeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  serializedVersion: 2
-  m_Quality: 0
-  m_UpdateWhenOffscreen: 0
-  m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4300000, guid: cfcf075e496092c489e38a82a64dd637, type: 3}
-  m_Bones: []
-  m_BlendShapeWeights: []
-  m_RootBone: {fileID: 0}
-  m_AABB:
-    m_Center: {x: 0, y: 0.6128685, z: 0}
-    m_Extent: {x: 0.23753408, y: 0.6104544, z: 0.28048974}
-  m_DirtyAABB: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!23 &4177339735994343214
 MeshRenderer:
   m_ObjectHideFlags: 0

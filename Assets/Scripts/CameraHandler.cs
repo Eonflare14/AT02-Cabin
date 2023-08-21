@@ -6,8 +6,11 @@ using UnityEngine.UI;
 
 
 /// <summary>
-/// This class should be attached to the main camera.
+/// This class should be attached to the main camera. It controls the mouse movement of the camera.
+/// Also deals with raycast interactions
 /// </summary>
+///<lastUpdated> 2023-08-21 </lastUpdated>
+
 public class CameraHandler : MonoBehaviour
 {
     [Tooltip("The amount of influence mouse input has on camera movement. Must have a value above 0.")]
@@ -15,13 +18,13 @@ public class CameraHandler : MonoBehaviour
     [Tooltip("The amount of 'drag' applied to the camera. Must have a value above 0.")]
     [SerializeField] private float drag;
     [Tooltip("The minimum and maximum angle that the camera can move on the y axis.")]
-    [SerializeField] private Vector2 verticalClamp = new Vector2(-45, 70);
+    [SerializeField] private Vector2 verticalClamp;
 
     [Tooltip("Dialogue Text Object")]
     [SerializeField] private GameObject DialogueTextObj;
     [Tooltip("Crosshair object")]
     [SerializeField] private GameObject CrosshairObj;
-
+    [Tooltip("List of sprites to use for crosshairs")]
     [SerializeField] private Sprite[] CrosshairSprites;
 
     private Image CrosshairImage;
@@ -42,7 +45,6 @@ public class CameraHandler : MonoBehaviour
     /// </summary>
     public bool MouseLookEnabled { get { return mouseLookEnabled; } set { ToggleMouseLook(value); } }
 
-    //Awake is executed before the Start method
     private void Awake()
     {
         if (transform.parent != null)
@@ -55,7 +57,6 @@ public class CameraHandler : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
     private void Start()
     {
         ToggleMouseLook(true, true);
@@ -66,7 +67,6 @@ public class CameraHandler : MonoBehaviour
         clearObjectDialogue();
     }
 
-    // Update is called once per frame
     private void Update()
     {
         //Mouse Look
@@ -131,21 +131,29 @@ public class CameraHandler : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Clears dialogue text to an empty string
+    /// </summary>
     private void clearObjectDialogue()
     {
-        DialogueText.text = "";
+        DialogueText.text = string.Empty;
     }
 
-    private void handleObjectDialogue(Collider obj)
+    /// <summary>
+    ///  Sets dialogue text correctly according to the provided object.
+    /// </summary>
+    /// <param name="obj"></param>
+    private void handleObjectDialogue(Collider obj = null)
     {
         if(obj == null)
         {
-            Debug.LogWarning("Null Object");
+            Debug.LogWarning("Null Object", obj);
+            clearObjectDialogue();
             return;
         }
 
-        string textName = "";
-        string textDescription = "";
+        string textName = string.Empty;
+        string textDescription = string.Empty;
 
         if (displayObjectDescription)
         {

@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// This class should be attatched to the player
+/// This class should be attatched to the player, it controlls the movement (including gravity) of the player it is attatched to
 /// </summary>
+/// <lastUpdated> 2023-08-21 </lastUpdated>
 
 
 public class PlayerMove : MonoBehaviour
@@ -16,7 +17,6 @@ public class PlayerMove : MonoBehaviour
 
     private CharacterController c_c;
 
-    // Start is called before the first frame update
     void Start()
     {
         c_c = GetComponent<CharacterController>();
@@ -27,7 +27,6 @@ public class PlayerMove : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
 

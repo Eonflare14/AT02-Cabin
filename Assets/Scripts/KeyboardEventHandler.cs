@@ -24,7 +24,7 @@ public class KeyboardEventHandler : MonoBehaviour
         try //this REALLY shouldnt be able to fail, but make sure it doesnt
         {
             string logString = string.Format(
-                    "Exiting application at time {0} seconds. Reason: {1}. {2}",
+                    "Exiting application at time {0} seconds. Reason: {1}.",
                     Time.realtimeSinceStartup,
                     reason
                 );

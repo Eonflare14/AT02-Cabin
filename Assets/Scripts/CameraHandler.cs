@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -29,7 +30,7 @@ public class CameraHandler : MonoBehaviour
 
     private Image CrosshairImage;
     private TextMeshProUGUI DialogueText;
-    
+
     private Vector2 smoothing;
     private Vector2 result;
     private Transform character;
@@ -40,6 +41,8 @@ public class CameraHandler : MonoBehaviour
     private Ray ray;
     private RaycastHit rayHit;
 
+    Dictionary<string, System.Tuple<string, string>> objectDialoguesDict = new Dictionary<string, System.Tuple<string, string>>();
+
     /// <summary>
     /// Use to turn mouse look on and off. To toggle cursor, use ToggleMouseLook method.
     /// </summary>
@@ -47,6 +50,12 @@ public class CameraHandler : MonoBehaviour
 
     private void Awake()
     {
+        //set up objectDialogues dictionary
+        objectDialoguesDict.Add("PFB_Bed", System.Tuple.Create("Bed", "This is a bed."));
+        objectDialoguesDict.Add("PFB_Toilet", System.Tuple.Create("Toilet", "This s a toilet."));
+        objectDialoguesDict.Add("PFB_KitchenBench", System.Tuple.Create("Kitchen Bench", "This is a bench."));
+
+        //check parent
         if (transform.parent != null)
         {
             character = transform.parent;
@@ -152,37 +161,20 @@ public class CameraHandler : MonoBehaviour
             return;
         }
 
-        string textName = string.Empty;
-        string textDescription = string.Empty;
-
         if (displayObjectDescription)
         {
-            switch (obj.name)
+            Tuple<string, string> textDialogue;
+
+            if (!objectDialoguesDict.TryGetValue(obj.name, out textDialogue))
             {
-                case "PFB_Bed":
-                    textName = "Bed";
-                    textDescription = "This is a bed.";
-                    break;
-                case "PFB_Toilet":
-                    textName = "Toilet";
-                    textDescription = "This is a toilet.";
-                    break;
-                case "PFB_KitchenBench":
-                    textName = "Kitchen Bench";
-                    textDescription = "This is a bench.";
-                    break;
-                default:
-                    textName = obj.name;
-                    textDescription = "Unknown Object";
-                    break;
+                textDialogue = Tuple.Create(string.Empty, string.Empty);
             }
+
+            DialogueText.text = string.Format("<b><u>{0}</u></b>\n{1}", textDialogue.Item1, textDialogue.Item2);
         }
         else
         {
             clearObjectDialogue();
         }
-
-
-        DialogueText.text = string.Format("<b><u>{0}</u></b>\n{1}", textName, textDescription);
     }
 }

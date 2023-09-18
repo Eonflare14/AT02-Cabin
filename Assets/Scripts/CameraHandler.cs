@@ -54,6 +54,7 @@ public class CameraHandler : MonoBehaviour
         objectDialoguesDict.Add("PFB_Bed", System.Tuple.Create("Bed", "This is a bed."));
         objectDialoguesDict.Add("PFB_Toilet", System.Tuple.Create("Toilet", "This s a toilet."));
         objectDialoguesDict.Add("PFB_KitchenBench", System.Tuple.Create("Kitchen Bench", "This is a bench."));
+        objectDialoguesDict.Add("PFB_DiningTable", System.Tuple.Create("Dining Table", "This is a table."));
 
         //check parent
         if (transform.parent != null)
